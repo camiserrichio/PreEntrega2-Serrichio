@@ -95,11 +95,12 @@ p {
 
 .target-section {
     padding-top: 250px;
+    align-items: center;
 }
 
 .bi.bi-arrow-down-circle {
     font-size: 40px;
-    margin: 740px;
+    margin: 250px;
     color: #000000be;
 }
 
