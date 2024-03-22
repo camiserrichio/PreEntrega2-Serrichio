@@ -33,23 +33,23 @@
                             <a class="nav-link" href="/index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown me-3">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                            <a class="nav-link dropdown-toggle" href="/secciones/" role="button"
                                 data-bs-toggle="dropdown">Productos</a>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Lamparas colgantes</a></li>
-                            <li><a class="dropdown-item" href="#">Lamparas de pared</a></li>
-                            <li><a class="dropdown-item" href="#">Lamparas de mesa y sobremesa</a></li>
-                            <li><a class="dropdown-item" href="#">Lamparas de pie</a></li>
-                        </ul>
+                                <li><a class="dropdown-item" href="#">Lamparas colgantes</a></li>
+                                <li><a class="dropdown-item" href="#">Lamparas de pared</a></li>
+                                <li><a class="dropdown-item" href="#">Lamparas de mesa y sobremesa</a></li>
+                                <li><a class="dropdown-item" href="#">Lamparas de pie</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">Proyectos</a>
+                            <a class="nav-link" href="/secciones/Proyectos.html">Proyectos</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link" href="/secciones/SobreMhoe.html">Sobre Mhöe</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">Cómo comprar</a>
+                            <a class="nav-link" href="/secciones/ComoComprar.html">Cómo comprar</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link" href="/secciones/Contacto.html">Contacto</a>
@@ -60,61 +60,56 @@
         </nav>
         <!-- Nav bar fin  -->
     </header>
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
-                    <h5 class="card-title text-center mb-3">Contact Form</h5>
+    <main>
+        <!-- Form de contacto inicia  -->
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow p-3 mb-5 bg-white rounded-3"
+                        style="background-color: #c040a2; border-color: #c040a2;">
+                        <h5 class="card-title text-center mb-3">Formulario de Contacto</h5>
 
-                    <form action="" method="post" enctype="text/plain" class="needs-validation" novalidate>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required>
-                            <div class="invalid-feedback">
-                                Please enter your name.
+                        <form action="" method="post" enctype="text/plain" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                <div class="invalid-feedback">Por favor ingrese su nombre.</div>
                             </div>
-                        </div>
 
-                        <div class="mb-3">
-                            <label for="apellido" class="form-label">Apellido:</label>
-                            <input type="text" class="form-control" id="apellido" name="apellido" required>
-                            <div class="invalid-feedback">
-                                Please enter your last name.
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido" required>
+                                <div class="invalid-feedback">Por favor ingrese su apellido.</div>
                             </div>
-                        </div>
 
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-mail:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                            <div class="invalid-feedback">
-                                Please enter a valid email address.
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">Por favor ingrese una dirección de correo válido.</div>
                             </div>
-                        </div>
 
-                        <div class="mb-3">
-                            <label for="movil" class="form-label">Móvil:</label>
-                            <input type="tel" class="form-control" id="movil" name="movil"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                            <div class="invalid-feedback">
-                                Please enter a valid mobile number (e.g., 123-456-7890).
+                            <div class="mb-3">
+                                <label for="movil" class="form-label">Móvil:</label>
+                                <input type="tel" class="form-control" id="movil" name="movil"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                <div class="invalid-feedback">Por favor ingrese un número de teléfono válido.</div>
                             </div>
-                        </div>
 
-                        <div class="mb-3">
-                            <label for="comentarios" class="form-label">Motivo del contacto:</label>
-                            <textarea name="comentarios" id="comentarios" cols="30" rows="5" class="form-control"
-                                required></textarea>
-                            <div class="invalid-feedback">
-                                Please enter your message.
+                            <div class="mb-3">
+                                <label for="comentarios" class="form-label">Motivo del contacto:</label>
+                                <textarea name="comentarios" id="comentarios" cols="30" rows="5" class="form-control"
+                                    required></textarea>
+                                <div class="invalid-feedback">Por favor ingrese su mensaje.</div>
                             </div>
-                        </div>
 
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- Form de contacto fin  -->
+    </main>
 
     <!-- Inicia Footer -->
     <footer class="footer bg text-light py-4">
@@ -147,11 +142,11 @@
     </footer>
     <!-- Fin Footer -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 
 </body>
 

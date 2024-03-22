@@ -19,9 +19,15 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings: "wdth" 100;
   } */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
 
 body {
     margin: 0;
@@ -48,7 +54,7 @@ p {
     font-weight: 300;
 }
 
-.different-font{
+.different-font {
     font-family: "zen-kaku gothic", new-regular;
     font-weight: 400;
 }
@@ -66,6 +72,11 @@ p {
 .custom-navbar {
     background-color: #ffffff;
     height: 120px;
+}
+
+.navbar-toggler {
+    color: red;
+    /* Cambia el color del icono */
 }
 
 .carousel-img {
@@ -144,7 +155,7 @@ p {
     /* Añadir espacio entre las columnas */
 }
 
-.col-sm-6{
+.col-sm-6 {
     flex: 1 0 auto;
     /* Ajustar el ancho de las columnas automáticamente */
     padding: 40px;
@@ -157,11 +168,12 @@ p {
     /* Mantener la altura proporcional de las imágenes */
 }
 
+/* 
 .texto-mas-productos {
     padding-left: 1000px;
     margin-bottom: 20px;
     align-items: center;
-}
+} */
 
 .card-img-top {
     height: 400px;
@@ -185,7 +197,7 @@ p {
 .footer {
     background-color: #c778bc;
     color: #f8f9fa;
-    height: 300px;
+    /* height: 300px; */
 }
 
 .footer a {
@@ -202,7 +214,7 @@ p {
 }
 
 .footer .input-group {
-    width: 60%;
+    width: 90%;
 }
 
 .footer .btn-primary {
@@ -231,4 +243,84 @@ p {
 
 .footer .text-light {
     text-align: center;
+}
+
+.custom-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Estilos personalizados para el formulario */
+.form-control {
+    background-color: #f8f9fa; /* Color de fondo de los campos de entrada */
+    border-color: #FFFF51; /* Color del borde de los campos de entrada */
+}
+
+.form-control:focus {
+    border-color: #6e556bcd; /* Color del borde cuando el campo está enfocado */
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 217, 0.403); /* Sombra cuando el campo está enfocado */
+}
+
+.btn-primary {
+    background-color: #c778bc; /* Color de fondo del botón */
+    border-color: #c778bc; /* Color del borde del botón */
+}
+
+.btn-primary:hover {
+    background-color: #252520; /* Color de fondo del botón cuando se pasa el ratón */
+    border-color: #FFFF51; /* Color del borde del botón cuando se pasa el ratón */
+}
+
+
+
+
+
+/* Media query for screens with a maximum width of 768 pixels */
+@media (max-width: 768px) {
+    .footer {
+        height: 300px;
+    }
+
+    .footer a {
+        color: #f9faf8;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        color: #fff;
+        text-decoration: underline;
+        font-family: "Inconsolata", monospace;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .footer .input-group {
+        width: 60%;
+    }
+
+    .footer .fa-lg {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 30px;
+    }
+
+    .footer input[type="email"] {
+        padding-left: 20px;
+    }
+
+    .footer .row {
+        margin-left: 150px;
+    }
+
+    .footer .text-light {
+        text-align: center;
+    }
+}
+
+/* Media query for screens with a minimum width of 992 pixels */
+@media (min-width: 992px) {
+    .example {
+        color: red;
+    }
 }
