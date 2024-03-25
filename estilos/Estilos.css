@@ -35,7 +35,7 @@ body {
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 500;
 }
 
@@ -71,7 +71,7 @@ p {
 
 .custom-navbar {
     background-color: #ffffff;
-    height: 120px;
+    height: 150px;
 }
 
 .navbar-toggler {
@@ -128,10 +128,10 @@ p {
 .texto-inicio {
     display: justify;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .container {
