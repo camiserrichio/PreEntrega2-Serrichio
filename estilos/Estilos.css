@@ -276,8 +276,18 @@ p {
 
 
 
-/* Media query for screens with a maximum width of 768 pixels */
+/* Media query para pantallas con un ancho máximo de 768 píxeles */
 @media (max-width: 768px) {
+    .carousel-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none; /* Oculta los controles del carrusel en pantallas pequeñas */
+    }
+
     .footer {
         height: 300px;
     }
