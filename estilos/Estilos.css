@@ -245,32 +245,50 @@ p {
     text-align: center;
 }
 
+.small {
+    font-size: 11px;
+    margin-top: 30px;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+}
+
 .custom-link {
     text-decoration: none;
     color: inherit;
 }
 
 
+
 /* Estilos personalizados para el formulario */
 .form-control {
-    background-color: #f8f9fa; /* Color de fondo de los campos de entrada */
-    border-color: #FFFF51; /* Color del borde de los campos de entrada */
+    background-color: #f8f9fa;
+    /* Color de fondo de los campos de entrada */
+    border-color: #FFFF51;
+    /* Color del borde de los campos de entrada */
 }
 
 .form-control:focus {
-    border-color: #6e556bcd; /* Color del borde cuando el campo está enfocado */
-    box-shadow: 0 0 0 0.25rem rgba(255, 0, 217, 0.403); /* Sombra cuando el campo está enfocado */
+    border-color: #6e556bcd;
+    /* Color del borde cuando el campo está enfocado */
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 217, 0.403);
+    /* Sombra cuando el campo está enfocado */
 }
 
 .btn-primary {
-    background-color: #c778bc; /* Color de fondo del botón */
-    border-color: #c778bc; /* Color del borde del botón */
+    background-color: #c778bc;
+    /* Color de fondo del botón */
+    border-color: #c778bc;
+    /* Color del borde del botón */
 }
 
 .btn-primary:hover {
-    background-color: #252520; /* Color de fondo del botón cuando se pasa el ratón */
-    border-color: #FFFF51; /* Color del borde del botón cuando se pasa el ratón */
+    background-color: #FFFF51;
+    /* Color de fondo del botón cuando se pasa el ratón */
+    border-color: #FFFF51;
+    /* Color del borde del botón cuando se pasa el ratón */
 }
+
+
 
 
 
@@ -285,7 +303,7 @@ p {
 
     .carousel-control-prev,
     .carousel-control-next {
-        display: none; /* Oculta los controles del carrusel en pantallas pequeñas */
+        display: none;
     }
 
     .footer {
