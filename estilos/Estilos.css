@@ -265,10 +265,18 @@ p {
     border-color: #c778bc; /* Color del borde de la pestaña */
 }
 
+
 .custom-tab:hover {
     background-color: #FFFF51; /* Color de fondo al pasar el mouse sobre la pestaña */
     border-color: #FFFF51; /* Color del borde al pasar el mouse sobre la pestaña */
+    color: #c778bc
 }
+
+.container-tabs {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Margen automático a la izquierda y la derecha para centrar horizontalmente */
+}
+
 
 /* Estilos para la tarjeta de Productos */
 .card {
