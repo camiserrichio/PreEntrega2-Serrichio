@@ -2,7 +2,7 @@
 
 /* .zen-kaku gothic new-light {
     font-family: "Zen Kaku Gothic New", sans-serif;
-    font-weight: 300;
+    font-weight: 300;s
     font-style: normal;
   }
   
@@ -40,13 +40,31 @@ h1 {
 }
 
 h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 22px;
-    font-weight: 300;
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 20px;
+    font-family: "Zen Kaku Gothic New", sans-serif;
     font-weight: 400;
+    font-style: normal;
+}
+
+h6{
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 p {
@@ -260,36 +278,49 @@ p {
 
 /* Estilos para el nav bar de Productos */
 .custom-tab {
-    color: #acaaaa; /* Color del texto de la pestaña */
-    background-color: #c778bc; /* Color de fondo de la pestaña */
-    border-color: #c778bc; /* Color del borde de la pestaña */
+    color: #acaaaa;
+    /* Color del texto de la pestaña */
+    background-color: #c778bc;
+    /* Color de fondo de la pestaña */
+    border-color: #c778bc;
+    /* Color del borde de la pestaña */
 }
 
 
 .custom-tab:hover {
-    background-color: #FFFF51; /* Color de fondo al pasar el mouse sobre la pestaña */
-    border-color: #FFFF51; /* Color del borde al pasar el mouse sobre la pestaña */
+    background-color: #FFFF51;
+    /* Color de fondo al pasar el mouse sobre la pestaña */
+    border-color: #FFFF51;
+    /* Color del borde al pasar el mouse sobre la pestaña */
     color: #c778bc
 }
 
 .container-tabs {
-    max-width: 800px; /* Ancho máximo del contenedor */
-    margin: 0 auto; /* Margen automático a la izquierda y la derecha para centrar horizontalmente */
+    max-width: 800px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Margen automático a la izquierda y la derecha para centrar horizontalmente */
 }
 
 
 /* Estilos para la tarjeta de Productos */
 .card {
-    border: 1px solid #c778bc; /* Define el grosor y color del borde */
-    border-radius: 10px; /* Define el radio de borde para suavizar las esquinas */
-    overflow: hidden; /* Asegura que la imagen no sobresalga de la tarjeta */
+    border: 1px solid #c778bc;
+    /* Define el grosor y color del borde */
+    border-radius: 10px;
+    /* Define el radio de borde para suavizar las esquinas */
+    overflow: hidden;
+    /* Asegura que la imagen no sobresalga de la tarjeta */
 }
 
 /* Estilos para la imagen dentro de la tarjeta de Productos */
 .card-img-top {
-    border-top-left-radius: 10px; /* Aplica el radio de borde solo a la esquina superior izquierda de la imagen */
-    border-top-right-radius: 10px; /* Aplica el radio de borde solo a la esquina superior derecha de la imagen */
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    border-top-left-radius: 10px;
+    /* Aplica el radio de borde solo a la esquina superior izquierda de la imagen */
+    border-top-right-radius: 10px;
+    /* Aplica el radio de borde solo a la esquina superior derecha de la imagen */
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
 }
 
 .custom-heart {
@@ -298,7 +329,8 @@ p {
 }
 
 .custom-heart:hover {
-    color: #c778bc; /* Color sólido del corazón al pasar el mouse */
+    color: #c778bc;
+    /* Color sólido del corazón al pasar el mouse */
 }
 
 
@@ -306,7 +338,8 @@ p {
 
 /* Estilos adicionales para la sección de cómo comprar */
 .container h2 {
-    color: #c778bc; /* Color de texto personalizado */
+    color: #c778bc;
+    /* Color de texto personalizado */
 }
 
 
@@ -341,8 +374,43 @@ p {
 }
 
 
+/* Iconos y elementos visuales */
+.icon-contact {
+    font-size: 24px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+/* Espaciado y alineación */
+.card-contact {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.featurette-divider {
+    color: #c778bc;
+    border: 2px solid #c778bc;
+}
+
+.featurette-heading {
+    margin-top: 170px;
+    margin-bottom: 20px;
+    margin-left: 180px;
+    margin-right: 100px;
+}
 
 
+.bi-envelope-heart {
+    font-size: 50px;
+    color: #c778bc;
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 
@@ -396,6 +464,27 @@ p {
     .footer .text-light {
         text-align: center;
     }
+
+    .card-contact {
+        width: 100%;
+    }
+
+    .bi-envelope-heart {
+        display: none;
+    }
+
+    .featurette-heading {
+        margin-top: 100px;
+        margin-bottom: 20px;
+        margin-left:20%; 
+        margin-right: 20%;
+    }
+
+    .featurette-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
 }
 
 /* Media query for screens with a minimum width of 992 pixels */
