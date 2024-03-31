@@ -1,0 +1,125 @@
+.carousel-img {
+    width: 700px;
+    height: 700px;
+
+    /* Altura deseada del carrusel */
+    object-fit: scale-down;
+
+    /* Ajusta la imagen sin deformarla */
+}
+
+/* Estilos personalizados para los botones del carrusel */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: #c778bc;
+
+    /* Color del texto */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    color: #07917e;
+
+    /* Color del texto */
+}
+
+.target-section {
+    padding-top: 250px;
+    align-items: center;
+}
+
+.bi.bi-arrow-down-circle {
+    font-size: 40px;
+    margin: 250px;
+    color: #000000be;
+}
+
+.icon-circle {
+    &:hover .bi.bi-arrow-down-circle {
+        color: #c778bc;
+
+        /* Hover color */
+    }
+
+    &:active .bi.bi-arrow-down-circle {
+        color: #FFFF51;
+
+        /* Click color */
+    }
+}
+
+.texto-inicio {
+    display: justify;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Columnas */
+
+.col-sm-4,
+.col-sm-5,
+.col-sm-7 {
+    flex: 1 0 auto;
+
+    /* Ajustar el ancho de las columnas automáticamente */
+    padding: 10px;
+
+    /* Añadir espacio entre las columnas */
+}
+
+.col-sm-6 {
+    flex: 1 0 auto;
+
+    /* Ajustar el ancho de las columnas automáticamente */
+    padding: 40px;
+}
+
+.img-thumbnail {
+    width: 100%;
+
+    /* Ajustar el ancho de las imágenes al ancho de la columna */
+    height: auto;
+
+    /* Mantener la altura proporcional de las imágenes */
+}
+
+/* 
+  .texto-mas-productos {
+      padding-left: 1000px;
+      margin-bottom: 20px;
+      align-items: center;
+  } */
+
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+    font-size: relative;
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.bi.bi.bi-arrow-right-short {
+    font-size: 25px;
+}

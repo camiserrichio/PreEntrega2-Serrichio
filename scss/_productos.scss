@@ -1,0 +1,71 @@
+/* Estilos para el nav bar de Productos */
+
+.custom-tab {
+    color: #acaaaa;
+
+    /* Color del texto de la pestaña */
+    background-color: #c778bc;
+
+    /* Color de fondo de la pestaña */
+    border-color: #c778bc;
+
+    /* Color del borde de la pestaña */
+
+    &:hover {
+        background-color: #FFFF51;
+
+        /* Color de fondo al pasar el mouse sobre la pestaña */
+        border-color: #FFFF51;
+
+        /* Color del borde al pasar el mouse sobre la pestaña */
+        color: #c778bc;
+    }
+}
+
+.container-tabs {
+    max-width: 800px;
+
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+
+    /* Margen automático a la izquierda y la derecha para centrar horizontalmente */
+}
+
+/* Estilos para la tarjeta de Productos */
+
+.card {
+    border: 1px solid #c778bc;
+
+    /* Define el grosor y color del borde */
+    border-radius: 10px;
+
+    /* Define el radio de borde para suavizar las esquinas */
+    overflow: hidden;
+
+    /* Asegura que la imagen no sobresalga de la tarjeta */
+}
+
+/* Estilos para la imagen dentro de la tarjeta de Productos */
+
+.card-img-top {
+    border-top-left-radius: 10px;
+
+    /* Aplica el radio de borde solo a la esquina superior izquierda de la imagen */
+    border-top-right-radius: 10px;
+
+    /* Aplica el radio de borde solo a la esquina superior derecha de la imagen */
+    width: 100%;
+
+    /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+}
+
+.custom-heart {
+    color: #c778bc;
+    margin-right: 30px;
+
+    &:hover {
+        color: #c778bc;
+
+        /* Color sólido del corazón al pasar el mouse */
+    }
+}

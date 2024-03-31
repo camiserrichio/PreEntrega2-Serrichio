@@ -1,0 +1,65 @@
+/* Estilos para Footer */
+
+.footer {
+    background-color: #c778bc;
+    color: #f8f9fa;
+
+    /* height: 300px; */
+
+    a {
+        color: #f9faf8;
+        text-decoration: none;
+
+        &:hover {
+            color: #fff;
+            text-decoration: underline;
+            font-family: "Inconsolata", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+
+    .input-group {
+        width: 90%;
+    }
+
+    .btn-primary {
+        background-color: #07917e;
+        border-color: #07917e;
+
+        &:hover {
+            background-color: #FFFF51;
+            border-color: #FFFF51;
+        }
+    }
+
+    .fa-lg {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 30px;
+    }
+
+    input[type="email"] {
+        padding-left: 20px;
+    }
+
+    .row {
+        margin-left: 150px;
+    }
+
+    .text-light {
+        text-align: center;
+    }
+}
+
+.small {
+    font-size: 11px;
+    margin-top: 30px;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+}
+
+.custom-link {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,277 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Inconsolata", monospace;
+}
+
+.custom-navbar {
+  background-color: #ffffff;
+  height: 120px;
+}
+.custom-navbar .navbar-nav .nav-link {
+  color: #c778bc;
+  /* Color lila personalizado navbar */
+}
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #FFFF51;
+  /* Cambia el color al color amarillo al pasar el mouse sobre los enlaces */
+}
+
+.navbar-toggler {
+  color: red;
+  /* Cambia el color del icono */
+}
+
+/* Estilos para Footer */
+.footer {
+  background-color: #c778bc;
+  color: #f8f9fa;
+  /* height: 300px; */
+}
+.footer a {
+  color: #f9faf8;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.footer .input-group {
+  width: 90%;
+}
+.footer .btn-primary {
+  background-color: #07917e;
+  border-color: #07917e;
+}
+.footer .btn-primary:hover {
+  background-color: #FFFF51;
+  border-color: #FFFF51;
+}
+.footer .fa-lg {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+}
+.footer input[type=email] {
+  padding-left: 20px;
+}
+.footer .row {
+  margin-left: 150px;
+}
+.footer .text-light {
+  text-align: center;
+}
+
+.small {
+  font-size: 11px;
+  margin-top: 30px;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+}
+
+.custom-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .zen-kaku gothic new-light {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 300;s
+    font-style: normal;
+  }
+
+  .zen-kaku gothic new-regular {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  // <uniquifier>: Use a unique and descriptive class name
+
+  .inconsolata-<uniquifier> {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  } */
+.carousel-img {
+  width: 700px;
+  height: 700px;
+  /* Altura deseada del carrusel */
+  object-fit: scale-down;
+  /* Ajusta la imagen sin deformarla */
+}
+
+/* Estilos personalizados para los botones del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #c778bc;
+  /* Color del texto */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  color: #07917e;
+  /* Color del texto */
+}
+
+.target-section {
+  padding-top: 250px;
+  align-items: center;
+}
+
+.bi.bi-arrow-down-circle {
+  font-size: 40px;
+  margin: 250px;
+  color: rgba(0, 0, 0, 0.7450980392);
+}
+
+.icon-circle:hover .bi.bi-arrow-down-circle {
+  color: #c778bc;
+  /* Hover color */
+}
+.icon-circle:active .bi.bi-arrow-down-circle {
+  color: #FFFF51;
+  /* Click color */
+}
+
+.texto-inicio {
+  display: justify;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Columnas */
+.col-sm-4,
+.col-sm-5,
+.col-sm-7 {
+  flex: 1 0 auto;
+  /* Ajustar el ancho de las columnas automáticamente */
+  padding: 10px;
+  /* Añadir espacio entre las columnas */
+}
+
+.col-sm-6 {
+  flex: 1 0 auto;
+  /* Ajustar el ancho de las columnas automáticamente */
+  padding: 40px;
+}
+
+.img-thumbnail {
+  width: 100%;
+  /* Ajustar el ancho de las imágenes al ancho de la columna */
+  height: auto;
+  /* Mantener la altura proporcional de las imágenes */
+}
+
+/* 
+  .texto-mas-productos {
+      padding-left: 1000px;
+      margin-bottom: 20px;
+      align-items: center;
+  } */
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+  font-size: relative;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.bi.bi.bi-arrow-right-short {
+  font-size: 25px;
+}
+
+/* Estilos para el nav bar de Productos */
+.custom-tab {
+  color: #acaaaa;
+  /* Color del texto de la pestaña */
+  background-color: #c778bc;
+  /* Color de fondo de la pestaña */
+  border-color: #c778bc;
+  /* Color del borde de la pestaña */
+}
+.custom-tab:hover {
+  background-color: #FFFF51;
+  /* Color de fondo al pasar el mouse sobre la pestaña */
+  border-color: #FFFF51;
+  /* Color del borde al pasar el mouse sobre la pestaña */
+  color: #c778bc;
+}
+
+.container-tabs {
+  max-width: 800px;
+  /* Ancho máximo del contenedor */
+  margin: 0 auto;
+  /* Margen automático a la izquierda y la derecha para centrar horizontalmente */
+}
+
+/* Estilos para la tarjeta de Productos */
+.card {
+  border: 1px solid #c778bc;
+  /* Define el grosor y color del borde */
+  border-radius: 10px;
+  /* Define el radio de borde para suavizar las esquinas */
+  overflow: hidden;
+  /* Asegura que la imagen no sobresalga de la tarjeta */
+}
+
+/* Estilos para la imagen dentro de la tarjeta de Productos */
+.card-img-top {
+  border-top-left-radius: 10px;
+  /* Aplica el radio de borde solo a la esquina superior izquierda de la imagen */
+  border-top-right-radius: 10px;
+  /* Aplica el radio de borde solo a la esquina superior derecha de la imagen */
+  width: 100%;
+  /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+}
+
+.custom-heart {
+  color: #c778bc;
+  margin-right: 30px;
+}
+.custom-heart:hover {
+  color: #c778bc;
+  /* Color sólido del corazón al pasar el mouse */
+}
+
+/* Estilos adicionales para la sección de cómo comprar */
+.container h2 {
+  color: #c778bc;
+  /* Color de texto personalizado */
+}
+
+/*# sourceMappingURL=estilo.css.map */

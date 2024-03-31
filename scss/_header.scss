@@ -1,0 +1,22 @@
+.custom-navbar {
+    .navbar-nav .nav-link {
+        color: #c778bc;
+
+        /* Color lila personalizado navbar */
+
+        &:hover {
+            color: #FFFF51;
+
+            /* Cambia el color al color amarillo al pasar el mouse sobre los enlaces */
+        }
+    }
+
+    background-color: #ffffff;
+    height: 120px;
+}
+
+.navbar-toggler {
+    color: red;
+
+    /* Cambia el color del icono */
+}
