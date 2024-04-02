@@ -1,0 +1,85 @@
+/* Estilos personalizados para el formulario */
+
+.form-control {
+    background-color: #f8f9fa;
+
+    /* Color de fondo de los campos de entrada */
+    border-color: #FFFF51;
+
+    /* Color del borde de los campos de entrada */
+
+    &:focus {
+        border-color: #6e556bcd;
+
+        /* Color del borde cuando el campo está enfocado */
+        box-shadow: 0 0 0 0.25rem rgba(255, 0, 217, 0.403);
+
+        /* Sombra cuando el campo está enfocado */
+    }
+}
+
+.btn-primary {
+    background-color: #c778bc;
+
+    /* Color de fondo del botón */
+    border-color: #c778bc;
+
+    /* Color del borde del botón */
+
+    &:hover {
+        background-color: #FFFF51;
+
+        /* Color de fondo del botón cuando se pasa el ratón */
+        border-color: #FFFF51;
+
+        /* Color del borde del botón cuando se pasa el ratón */
+    }
+}
+
+/* Iconos y elementos visuales */
+
+.icon-contact {
+    font-size: 24px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+/* Espaciado y alineación */
+
+.card-contact {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.featurette-divider {
+    color: #c778bc;
+    border: 2px solid #c778bc;
+}
+
+.featurette-heading {
+    margin-top: 170px;
+    margin-bottom: 20px;
+    margin-left: 180px;
+    margin-right: 100px;
+}
+
+.bi-envelope-heart {
+    font-size: 50px;
+    color: #c778bc;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+        color: #FFFF51;
+    }
+}
+
+.text-contacto {
+    color: #c778bc;
+    font-size: 75%;
+}
