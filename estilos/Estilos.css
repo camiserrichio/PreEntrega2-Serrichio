@@ -373,6 +373,17 @@ p {
     /* Color del borde del botón cuando se pasa el ratón */
 }
 
+.btn-info {
+    background-color: transparent;
+    border: 2px solid #c778bc;
+    color: #c778bc;
+}
+
+.btn-info:hover {
+    background-color: #FFFF51;
+    border-color: #FFFF51;
+    color: #c778bc;
+}
 
 /* Iconos y elementos visuales */
 .icon-contact {
@@ -453,7 +464,8 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);/* Centrar el texto */
+    transform: translate(-50%, -50%);
+    /* Centrar el texto */
     background-color: rgba(199, 120, 188, 0.685);
     width: 100%;
     padding: 20px;
@@ -549,13 +561,17 @@ p {
 
 
     .gallery-container {
-        padding: 0 10px; /* Reduce los márgenes en pantallas más pequeñas */
+        padding: 0 10px;
+        /* Reduce los márgenes en pantallas más pequeñas */
         display: flex;
-        flex-direction: column; /* Cambia la dirección del contenedor a columna */
-        align-items: center; /* Centra los elementos horizontalmente */
+        flex-direction: column;
+        /* Cambia la dirección del contenedor a columna */
+        align-items: center;
+        /* Centra los elementos horizontalmente */
     }
 
     .gallery-item {
-        width: 100%; /* Ajusta el ancho de los elementos para llenar la pantalla */
+        width: 100%;
+        /* Ajusta el ancho de los elementos para llenar la pantalla */
     }
 }

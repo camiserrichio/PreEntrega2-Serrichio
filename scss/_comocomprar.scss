@@ -2,6 +2,61 @@
 
 .container h2 {
     color: #c778bc;
+}
 
-    /* Color de texto personalizado */
+.texto-inicio {
+    display: justify;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container-map {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+.col-md-7 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-md-7 img {
+    width: 100%;
+    /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto;
+    /* Permite que la altura de la imagen se ajuste automáticamente */
+    max-width: 100%;
+    /* Limita el ancho máximo de la imagen al 100% del contenedor */
+    max-height: 100%;
+    /* Limita la altura máxima de la imagen al 100% del contenedor */
+    object-fit: contain;
+    /* Escala la imagen para que se ajuste dentro del contenedor sin deformarla */
+}
+
+/* Personalización de colores para el botón */
+.btn-info {
+    background-color: transparent;
+    border: 2px solid #c778bc;
+    color: #c778bc;
+
+    &:hover {
+        background-color: #FFFF51;
+        border-color: #FFFF51;
+        color: #c778bc;
+    }
 }
