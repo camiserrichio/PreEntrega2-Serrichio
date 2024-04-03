@@ -106,22 +106,6 @@ p {
 }
 
 /* Estilos personalizados para los botones del carrusel */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    color: #c778bc;
-    /* Color del texto */
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-    color: #07917e;
-    /* Color del texto */
-}
-
-.carousel-control-prev-icon {
-    color: aquamarine !important;
-}
-
 .target-section {
     padding-top: 250px;
     align-items: center;
