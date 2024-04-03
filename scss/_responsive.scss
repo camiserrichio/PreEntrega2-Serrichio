@@ -1,0 +1,103 @@
+/* Media query para pantallas con un ancho máximo de 768 píxeles */
+@media (max-width: 768px) {
+    .carousel-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .footer {
+        height: 300px;
+
+        a {
+            color: #f9faf8;
+            text-decoration: none;
+
+            &:hover {
+                color: #fff;
+                text-decoration: underline;
+                font-family: "Inconsolata", monospace;
+                font-weight: 400;
+                font-style: normal;
+            }
+        }
+
+        .input-group {
+            width: 60%;
+        }
+
+        .fa-lg {
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 30px;
+        }
+
+        input[type="email"] {
+            padding-left: 20px;
+        }
+
+        .row {
+            margin-left: 150px;
+        }
+
+        .text-light {
+            text-align: center;
+        }
+    }
+
+    .card-contact {
+        width: 100%;
+    }
+
+    .bi-envelope-heart {
+        display: none;
+    }
+
+    .featurette-heading {
+        margin-top: 100px;
+        margin-bottom: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .featurette-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .gallery-container {
+        padding: 0 10px;
+
+        /* Reduce los márgenes en pantallas más pequeñas */
+        display: flex;
+        flex-direction: column;
+
+        /* Cambia la dirección del contenedor a columna */
+        align-items: center;
+
+        /* Centra los elementos horizontalmente */
+    }
+
+    .gallery-item {
+        width: 100%;
+
+        /* Ajusta el ancho de los elementos para llenar la pantalla */
+    }
+
+    .col-md-6,
+    .container-map {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-map iframe {
+        height: 300px;
+
+        /* Reducir la altura del mapa para pantallas pequeñas */
+    }
+}

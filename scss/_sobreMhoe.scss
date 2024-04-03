@@ -1,0 +1,15 @@
+
+.gallery-container {
+    padding: 0 10px; /* Reduce los márgenes en pantallas más pequeñas */
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del contenedor a columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.gallery-item {
+    width: 100%; /* Ajusta el ancho de los elementos para llenar la pantalla */
+}
+
+.col-md-6 {
+    width: 100%;
+}
