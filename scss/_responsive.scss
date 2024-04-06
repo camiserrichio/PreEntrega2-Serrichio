@@ -2,8 +2,11 @@
 @media (max-width: 768px) {
     .carousel-img {
         width: 100%;
+        /* Ajusta el ancho de la imagen al 100% del contenedor en dispositivos pequeños */
         height: auto;
+        /* Permite que la altura de la imagen se ajuste automáticamente */
         object-fit: cover;
+        /* Escala la imagen para que cubra completamente el contenedor */
     }
 
     .carousel-control-prev,
@@ -12,7 +15,44 @@
     }
 
     .footer {
-        height: 300px;
+        padding: 20px;
+        /* Añade un espacio interno al footer en dispositivos más pequeños */
+        height: auto;
+        /* Elimina la altura fija para que se ajuste automáticamente */
+        background-color: #c778bc;
+
+        .container {
+            max-width: 100%;
+        }
+
+        .col-5 {
+            text-align: center;
+        }
+
+        .col-4 {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+            /* Añade espacio entre los párrafos */
+        }
+
+        ul.list-inline {
+            text-align: justify;
+            margin-bottom: 20px;
+            /* Añade espacio entre la lista de íconos y el contenido */
+        }
+
+        .bg-traslucid {
+            background-color: transparent;
+            /* Elimina el color de fondo del footer */
+        }
+
+        .small {
+            margin-top: 20px;
+            /* Ajusta el espacio superior */
+        }
 
         a {
             color: #f9faf8;
@@ -42,7 +82,9 @@
         }
 
         .row {
-            margin-left: 150px;
+            margin-left: 100px;
+            flex-direction: column;
+            align-items: center;
         }
 
         .text-light {
@@ -65,46 +107,104 @@
         margin-right: 20%;
     }
 
+    .featurette {
+
+        .col-md-7,
+        .col-md-4 {
+            text-align: center;
+        }
+    }
+
     .featurette-image {
         max-width: 100%;
         height: auto;
+        margin-top: 20px;
     }
 
     .gallery-container {
         padding: 0 10px;
-
         /* Reduce los márgenes en pantallas más pequeñas */
         display: flex;
         flex-direction: column;
-
-        /* Cambia la dirección del contenedor a columna */
         align-items: center;
-
-        /* Centra los elementos horizontalmente */
     }
 
     .gallery-item {
         width: 100%;
-
         /* Ajusta el ancho de los elementos para llenar la pantalla */
     }
 
-    .col-md-6,
-    .container-map {
-        width: 100%;
+    .container {
+        margin: 0 auto;
+        width: 500px;
+        padding: 20px;
     }
 }
 
 @media (max-width: 556px) {
-    .container-map iframe {
-        height: 300px;
-
-        /* Reducir la altura del mapa para pantallas pequeñas */
-    }
-
     .carousel-img {
         width: 100%;
         height: auto;
+        /* Permite que la altura de la imagen se ajuste automáticamente */
         object-fit: cover;
+        /* Escala la imagen para que cubra completamente el contenedor */
     }
+
+    .footer {
+        padding: 15px;
+
+        .container {
+            max-width: 100%;
+        }
+
+        .row {
+            flex-direction: column;
+            /* Cambia la dirección de las filas a columna */
+            align-items: center;
+            /* Centra los elementos horizontalmente */
+        }
+
+        .col-5,
+        .col-4 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        ul.list-inline {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .bg-traslucid {
+            background-color: transparent;
+        }
+
+        .small {
+            margin-top: 15px;
+        }
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
 }

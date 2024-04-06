@@ -9,21 +9,28 @@ $font1: "Inconsolata", monospace;
 $font2: "Zen Kaku Gothic New", sans-serif;
 
 
-// botón de desplazamiento hacia arriba
+/* botón de desplazamiento hacia arriba */
+
 #scroll-to-top.custom-btn {
     height: 50px;
     width: 50px;
-    background-color: #D1D0D0;
+    background-color: #c778bc;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 40px;
+    right: 60px;
     text-align: center;
     color: #fff;
-    line-height: 35px;
-    font-size: 70px;
-    box-shadow: 0 0 5px #fff;
-    border-radius: 100%;
+    line-height: 50px;
+    font-size: 30px;
+    box-shadow: 0 0 15px #fff;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: #FFFF51;
+        color: #c778bc;
+    }
 }
+
 
 
 @import "./variables";

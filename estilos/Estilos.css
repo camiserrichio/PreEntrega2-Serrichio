@@ -98,7 +98,8 @@ p {
 }
 
 .carousel-img {
-    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    max-width: 100%;
+    /* Establece el ancho máximo de la imagen al 100% del contenedor */
     height: 600px;
     object-fit: scale-down;
     /* Ajusta la imagen sin deformarla */
@@ -376,16 +377,16 @@ p {
 
 /* botón de desplazamiento hacia arriba */
 #scroll-to-top.custom-btn {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     background-color: #c778bc;
     position: fixed;
     bottom: 40px;
     right: 60px;
     text-align: center;
     color: #fff;
-    line-height: 60px;
-    font-size: 40px;
+    line-height: 50px;
+    font-size: 30px;
     box-shadow: 0 0 15px #fff;
     border-radius: 50%;
 }
@@ -473,7 +474,8 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centrar el texto */
+    transform: translate(-50%, -50%);
+    /* Centrar el texto */
     background-color: rgba(199, 120, 188, 0.685);
     width: 100%;
     padding: 20px;
@@ -499,9 +501,12 @@ p {
 /* Media query para pantallas con un ancho máximo de 768 píxeles */
 @media (max-width: 768px) {
     .carousel-img {
-        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor en dispositivos pequeños */
-        height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
-        object-fit: cover; /* Escala la imagen para que cubra completamente el contenedor */
+        width: 100%;
+        /* Ajusta el ancho de la imagen al 100% del contenedor en dispositivos pequeños */
+        height: auto;
+        /* Permite que la altura de la imagen se ajuste automáticamente */
+        object-fit: cover;
+        /* Escala la imagen para que cubra completamente el contenedor */
     }
 
     .carousel-control-prev,
@@ -510,7 +515,48 @@ p {
     }
 
     .footer {
-        height: 300px;
+        padding: 20px;
+        /* Añade un espacio interno al footer en dispositivos más pequeños */
+        height: auto;
+        /* Elimina la altura fija para que se ajuste automáticamente */
+        background-color: #c778bc;
+        /* Establece el color de fondo del footer */
+    }
+
+    .footer .container {
+        max-width: 100%;
+    }
+
+    .footer .col-5 {
+        text-align: center;
+        /* Centra el contenido de la primera columna */
+    }
+
+    .footer .col-4 {
+        text-align: center;
+        /* Centra el contenido de la segunda columna */
+    }
+
+    .footer p {
+        margin-bottom: 10px;
+        /* Añade espacio entre los párrafos */
+    }
+
+    .footer ul.list-inline {
+        text-align: center;
+        /* Centra los íconos sociales */
+        margin-bottom: 20px;
+        /* Añade espacio entre la lista de íconos y el contenido */
+    }
+
+    .footer .bg-traslucid {
+        background-color: transparent;
+        /* Elimina el color de fondo del footer */
+    }
+
+    .footer .small {
+        margin-top: 20px;
+        /* Ajusta el espacio superior */
     }
 
     .footer a {
@@ -541,7 +587,11 @@ p {
     }
 
     .footer .row {
-        margin-left: 150px;
+        margin-left: 100px;
+        flex-direction: column;
+        /* Cambia la dirección de las filas a columna */
+        align-items: center;
+        /* Centra los elementos horizontalmente */
     }
 
     .footer .text-light {
@@ -563,11 +613,19 @@ p {
         margin-right: 20%;
     }
 
+    .featurette .col-md-7 {
+        text-align: center;
+    }
+
+    .featurette .col-md-4 {
+        text-align: center;
+    }
+
     .featurette-image {
         max-width: 100%;
         height: auto;
+        margin-top: 20px;
     }
-
 
     .gallery-container {
         padding: 0 10px;
@@ -583,12 +641,90 @@ p {
         width: 100%;
         /* Ajusta el ancho de los elementos para llenar la pantalla */
     }
+
+    .container {
+        margin: 0 auto;
+        width: 500px;
+        padding: 20px;
+    }
 }
 
 @media (max-width: 556px) {
     .carousel-img {
-        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor en dispositivos más pequeños */
-        height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
-        object-fit: cover; /* Escala la imagen para que cubra completamente el contenedor */
+        width: 100%;
+        /* Ajusta el ancho de la imagen al 100% del contenedor en dispositivos más pequeños */
+        height: auto;
+        /* Permite que la altura de la imagen se ajuste automáticamente */
+        object-fit: cover;
+        /* Escala la imagen para que cubra completamente el contenedor */
+    }
+
+    .footer {
+        padding: 15px;
+        /* Ajusta el relleno del footer para dispositivos más pequeños */
+    }
+
+    .footer .container {
+        max-width: 100%;
+        /* Asegura que el contenedor del footer ocupe todo el ancho disponible */
+    }
+
+    .footer .row {
+        flex-direction: column;
+        /* Cambia la dirección de las filas a columna */
+        align-items: center;
+        /* Centra los elementos horizontalmente */
+    }
+
+    .footer .col-5,
+    .footer .col-4 {
+        text-align: center;
+        /* Centra el contenido de las columnas */
+        margin-bottom: 15px;
+        /* Añade espacio entre las columnas */
+    }
+
+    .footer p {
+        margin-bottom: 10px;
+    }
+
+    .footer ul.list-inline {
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+
+    .footer .bg-traslucid {
+        background-color: transparent;
+        /* Elimina el color de fondo del footer */
+    }
+
+    .footer .small {
+        margin-top: 15px;
+    }
+
+    .card {
+        width: 90%;
+        /* Reducir el ancho de la tarjeta para que se ajuste mejor en dispositivos más pequeños */
+        margin: 0 auto;
+        /* Centrar la tarjeta en la pantalla */
+    }
+
+    .card-title {
+        font-size: 18px;
+        /* Reducir el tamaño del título del formulario */
+    }
+
+    .form-control {
+        font-size: 14px;
+        /* Reducir el tamaño del texto en los campos de entrada */
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        /* Reducir el tamaño del texto en el botón */
+        width: 100%;
+        /* Hacer que el botón ocupe todo el ancho disponible */
+        margin-top: 10px;
+        /* Añadir un poco de espacio entre el botón y los campos de entrada */
     }
 }
