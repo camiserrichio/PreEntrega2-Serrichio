@@ -3,6 +3,7 @@
     .carousel-img {
         width: 100%;
         height: auto;
+        object-fit: cover;
     }
 
     .carousel-control-prev,
@@ -94,10 +95,16 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 556px) {
     .container-map iframe {
         height: 300px;
 
         /* Reducir la altura del mapa para pantallas pequeñas */
+    }
+
+    .carousel-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 }

@@ -98,9 +98,8 @@ p {
 }
 
 .carousel-img {
-    width: 700px;
-    height: 700px;
-    /* Altura deseada del carrusel */
+    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    height: 600px;
     object-fit: scale-down;
     /* Ajusta la imagen sin deformarla */
 }
@@ -295,6 +294,13 @@ p {
     /* Define el radio de borde para suavizar las esquinas */
     overflow: hidden;
     /* Asegura que la imagen no sobresalga de la tarjeta */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
 }
 
 /* Estilos para la imagen dentro de la tarjeta de Productos */
@@ -327,8 +333,6 @@ p {
 }
 
 
-
-/* Estilos personalizados para el formulario */
 .form-control {
     background-color: #f8f9fa;
     /* Color de fondo de los campos de entrada */
@@ -366,6 +370,28 @@ p {
 .btn-info:hover {
     background-color: #FFFF51;
     border-color: #FFFF51;
+    color: #c778bc;
+}
+
+
+/* botón de desplazamiento hacia arriba */
+#scroll-to-top.custom-btn {
+    height: 60px;
+    width: 60px;
+    background-color: #c778bc;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    font-size: 40px;
+    box-shadow: 0 0 15px #fff;
+    border-radius: 50%;
+}
+
+#scroll-to-top.custom-btn:hover {
+    background-color: #FFFF51;
     color: #c778bc;
 }
 
@@ -447,8 +473,7 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    /* Centrar el texto */
+    transform: translate(-50%, -50%); /* Centrar el texto */
     background-color: rgba(199, 120, 188, 0.685);
     width: 100%;
     padding: 20px;
@@ -474,8 +499,9 @@ p {
 /* Media query para pantallas con un ancho máximo de 768 píxeles */
 @media (max-width: 768px) {
     .carousel-img {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor en dispositivos pequeños */
+        height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+        object-fit: cover; /* Escala la imagen para que cubra completamente el contenedor */
     }
 
     .carousel-control-prev,
@@ -556,5 +582,13 @@ p {
     .gallery-item {
         width: 100%;
         /* Ajusta el ancho de los elementos para llenar la pantalla */
+    }
+}
+
+@media (max-width: 556px) {
+    .carousel-img {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor en dispositivos más pequeños */
+        height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+        object-fit: cover; /* Escala la imagen para que cubra completamente el contenedor */
     }
 }
